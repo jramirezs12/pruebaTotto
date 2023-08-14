@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario con Sass</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Cambiar el enlace al archivo style.css -->
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <img src="./../assets/img/TOTTO.png" alt="Logo" />
+      </div>
+      <div class="header-right">
+        <div class="toplinks">
+          <ul>
+            <li>
+              <a
+                href="https://wa.me/573022200200?text=Hola, gracias por contactarnos. Cuéntanos ¿Cuál es tu solicitud?"
+                target="_blank"
+                class="__livechat icon icon-mobile underscore-slide"
+              >
+                Escríbenos por WhatsApp: 302 2200200 | Servicio al cliente
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="button-container">
+          <button class="icon-button" id="mis-pedidos">
+            <img
+              src="./../assets/img/pedido.png"
+              class="order"
+              alt="Icono Mis Pedidos"
+            />
+            Mis pedidos
+          </button>
+          <button class="icon-button" id="carrito">
+            <img
+              src="./../assets/img/backpack.png"
+              class="car"
+              alt="Icono Carrito"
+            />
+            1
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="banner-content">
+        <h1>< <span>Nueva</span> colección Disney Pets ></h1>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <form id="registro-form" action="./php/guardar_datos.php" method="post">
+        <h1 for="email">
+          Ingresa tu correo para validarte en nuestra base de datos y continuar
+          con el proceso:
+        </h1>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Email"
+        />
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      <div class="help-info">
+        <h4>
+          ¿Necesitas ayuda?<br />
+          <br />
+          Línea nacional: 01 8000 510203 - Bogotá: 390 73 93<br />
+          Email:
+          <a href="mailto:servicioalcliente@totto.com"
+            >servicioalcliente@totto.com</a
+          ><br />
+          o escríbenos a la línea de Whatapps: 302 2200200
+        </h4>
+        <!--<a href="mailto:help@totto.com?subject=Contact Us" class="gray-btn">Contact Us</a>-->
+      </div>
+    </section>
+    
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-popup" id="close-popup">&times;</span>
+        <p id="popup-message"></p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="column">
+        <ul>
+          <li>
+            <a href="/compania/historia" class="underscore-slide"
+              >Quiénes somos</a
+            >
+          </li>
+          <li>
+            <a href="/legales/linea-etica" class="underscore-slide"
+              >Línea Ética</a
+            >
+          </li>
+          <li>
+            <a href="/legales/politica-y-aviso-de-privacidad"
+              >Aviso de privacidad</a
+            >
+          </li>
+          <li>
+            <a href="/talento-totto/colaboradores" class="underscore-slide"
+              >Talento Totto</a
+            >
+          </li>
+          <li><a href="/sostenibilidad">Sostenibilidad</a></li>
+          <li>
+            <a href="/prensa" target="_blank" class="underscore-slide"
+              >Prensa</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ventascorporativas.totto.com/"
+              class="__faq underscore-slide"
+              >Negocios empresariales</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tottoco.vteximg.com.br/arquivos/proteccion_de_datos_dp_gr_jr.pdf?v=637816648622470000"
+              class="underscore-slide"
+              >Política de Tratamiento de Datos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="column">
+        <ul>
+          <li>
+            <a href="/FAQ" class="underscore-slide">Servicio al cliente</a>
+          </li>
+          <li>
+            <a href="/store-locator" class="underscore-slide"
+              >Encuentra tu tienda</a
+            >
+          </li>
+          <li>
+            <a href="/mascotas/tiendas" class="underscore-slide"
+              >Tiendas Totto Pets</a
+            >
+          </li>
+          <li>
+            <a
+              href="/legales/promociones-vigentes/2023"
+              class="underscore-slide"
+              >Promociones vigentes</a
+            >
+          </li>
+          <li>
+            <a href="/legales/envios-y-entregas" class="underscore-slide"
+              >Envíos y Entregas</a
+            >
+          </li>
+          <li>
+            <a href="/legales/cambios-y-devoluciones" class="underscore-slide"
+              >Cambios y Devoluciones</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://wa.me/573022200200?text=Hola, gracias por contactarnos. Cuéntanos ¿Cuál es tu solicitud?"
+              class="__faq underscore-slide"
+              >Escríbenos por WhatsApp</a
+            >
+          </li>
+          <li>
+            <a href="http://www.keypago.com/" target="_blank"
+              >Keypago, paga fácil</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="column">
+        <div class="FollowUs">
+          <h5 style="font-size: large">Síguenos</h5>
+          <div class="followus">
+            <a
+              href="https://www.facebook.com/totto.brand/"
+              target="_blank"
+              class="__facebook"
+            ></a
+            ><a
+              href="https://twitter.com/TottoColombia"
+              target="_blank"
+              class="__twitter"
+            ></a
+            ><a
+              href="https://www.instagram.com/tottobrand/"
+              target="_blank"
+              class="__instagram"
+            ></a
+            ><a
+              href="https://www.youtube.com/user/TOTTOoficial"
+              target="_blank"
+              class="__youtube"
+            ></a
+            ><br /><br /><!--<h5>Medios de pago</h5>--><!--  <br/> --><a
+              href="https://www.payulatam.com/co/"
+              target="_blank"
+              class="_mediosdepago"
+              >PayUlatam</a
+            ><a href="http://www.sic.gov.co/" target="_blank"
+              ><img
+                src="/arquivos/sic.png?v=001"
+                alt="Super intendencia de industria y comercio"
+                style="max-width: 120px; opacity: 0.5"
+                class="b-error"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div id="registro" class="Newsletter transformNews">
+          <h5>¡Regístrate o actualiza tus datos!</h5>
+          <div class="NewsletterForm">
+            <div class="caption">
+              <br />
+              Te damos la bienvenida registrando y/o actualizando tus datos,
+              recibe
+              <strong>10% <br />de descuento en tu próxima compra</strong>
+              redímelo únicamente en nuestra tienda <br />online. <br /><br />
+              Y además disfruta
+              <strong>
+                25% de descuento en tu compra en el mes de
+                <br />cumpleaños.</strong
+              >
+            </div>
+            <br /><br />
+            <div class="caption">
+              <strong
+                >*Los descuentos de registro/actualización y cumpleaños no
+                son<br />
+                acumulables.<a
+                  style="color: #fff"
+                  href="/legales/promociones-vigentes/2023#news-341"
+                >
+                  *Aplican términos y condiciones.
+                </a></strong
+              >
+            </div>
+            <br /><br />
+            <div class="caption">
+              *Aplica para productos sin descuento o full Price.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
